@@ -1,13 +1,9 @@
 const removeFromArray = function(arr, numRMV) {
-    const newArray = [];
-    for ( i=0; i<arr.length; i++) {
-        if (arr[i]!==numRMV) {
-            newArray.push(arr[i]);
-        }
-    }
-    console.log(newArray);
+    const filteredArray = arr.filter(element => element !== numRMV)
+
+    console.log(filteredArray);
     console.log(numRMV);
-    return newArray;
+    return filteredArray;
 };
 
 // Do not edit below this line
