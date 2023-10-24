@@ -1,5 +1,5 @@
-const removeFromArray = function(arr, numRMV) {
-    const filteredArray = arr.filter(element => element !== numRMV)
+const removeFromArray = function(arr, ...numRMV) {
+    const filteredArray = arr.filter(item => !numRMV.includes(item));
 
     console.log(filteredArray);
     console.log(numRMV);
