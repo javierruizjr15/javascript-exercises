@@ -1,5 +1,7 @@
 const sumAll = function (num1, num2) {
   var finalSum = 0;
+  if (num1 < 0 || num2 < 0) return "ERROR";
+  if (!Number.isInteger(num1) || !Number.isInteger(num2)) return "ERROR"
 
   console.log(finalSum);
   if (num1 < num2) {
@@ -12,12 +14,6 @@ const sumAll = function (num1, num2) {
     }
   }
   console.log(finalSum);
-  if (num1 < 0 || num2 < 0) {
-    return "ERROR";
-  }
-  if (typeof num1 !== "number" || typeof num2 !== "number") {
-    return "ERROR"
-  }
   return finalSum;
 };
 
